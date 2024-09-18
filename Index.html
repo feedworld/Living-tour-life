@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Webpage</title>
+    <link rel="stylesheet" href="./stylebox.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">
+            <img src="images/travel logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Living Tour Life </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" >Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!---This is the hero section-->
+      <main>
+        <div class="modal" tabindex="-1" id="booking-modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Book a Tour</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form action="#">
+                    <div class ="row g-2">
+                      <div class="col-sm-6">
+                        <div class="form-floating">
+                          <input if="email1" type ="email" class="form-control" placeholder="email address">
+                          <label for="email">Email address</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class =" form-floating">
+                          <select id="select1" class="form-select">
+                            <option>Tromso, Norway - $2300</option>
+                            <option>Paris, France - $3000</option>
+                            <option>Helsinki, Finland - $3500</option>
+                          </select>
+                          <label for ="select">Pick a tour</label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mountain.png" class="d-block w-100" alt="mountain">
+              <div class="carousel-caption top-0 mt-4">
+                <p class="fs-2 mt-5">Adventure Mountain View from beautiful Angles</p>
+                <h1 class="display-1 fw-bolder text-capitalize"> Living Tour</h1>
+                <button class=" btn btn-primary px-4 py-2 fs-5 mt-7" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/Adventure-couples-Iguazu-Falls.png" class="d-block w-100" alt="Adventure">
+              <div class="carousel-caption top-0 mt-4 ">
+              <p class="fs-2 mt-4">Experience Beautiful landScape </p>
+                <h1 class="display-1 fw-bolder text-capitalize"> Living Tour</h1>
+                <button class=" btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+              </div>  
+            </div>
+            <div class="carousel-item">
+              <img src="images/italian tower.png" class="d-block w-100" alt="italian tower">
+              <div class="carousel-caption top-0 mt-4">
+              <p class="fs-2 mt-4">Ancient Tower in Italy</p>
+                <h1 class="display-1 fw-bolder text-capitalize"> Living Tour</h1>
+                <button class=" btn btn-primary px-4 py-2 fs-5 mt-7" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+              </div>  
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </main>
+      <section class="overview">
+        <div class="container h-100 d-flex align-items-center">
+        <div class="row w-100 text-center fs-4">
+        <div class="col-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/>
+          </svg>
+          3 Amazing Destination
+        </div>
+        <div class="col-lx">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill me-2" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+          </svg>
+          Only pay 5% up front
+        </div>
+        <div class="col-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          1000's of customers
+        </div>
+      </div>
+      </div>
+      </section>
+      <section id="packages" class="pt-5">
+        <h2 class="text-center my-6">Packages</h2>
+        <div class="row justify-content-center hidden-overflow">
+          <div class="col-lg text-center">
+            <div class="card">
+              <img src="images/Germany.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">France--$3000</h5>
+                <p class="card-text">France, famed for its art, blends elegance and history. From Paris to Provence, it captivates with landmarks like the Louvre and world-class wine.</p>
+                <a href="#" class="btn btn-primary">Go To FRANCE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="card">
+              <img src="images/Norway.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Norway--$2300</h5>
+                <p class="card-text">Norway, a Scandinavian country, is famous for its stunning fjords, mountains, and Northern Lights, with a rich Viking history and focus on nature.</p>
+                <a href="#" class="btn btn-primary">Go To NORWAY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="card">
+              <img src="images/New York.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">New York--$3800</h5>
+                <p class="card-text">New York City draws millions of tourists with its iconic landmarks, diverse culture, and vibrant attractions like Times Square and Central Park.</p>
+                <a href="#" class="btn btn-primary">Go To NYC</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+    <section id="about"> 
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-md-4">
+            <img src="images/smile on call.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <!-- Text Section -->
+          <div class="col-md-8">
+            <p>
+              Living Tour Life is a travel agency that transforms your travel dreams into reality. 
+              Specializing in personalized travel experiences, Wanderlust Adventures takes care of every detail—from flights and hotels to unique tours and local experiences. 
+              Whether you're looking for a luxurious retreat, a thrilling adventure, or a serene escape, Wanderlust Adventures offers curated itineraries tailored to your preferences. 
+              With insider knowledge and exclusive deals, they provide a seamless, stress-free journey, allowing you to immerse yourself fully in the wonders of travel. 
+              Explore the world with confidence and ease, guided by Living Tour Life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section id="contact">
+    <div class="contact mt-5">
+      <div class="container">
+        <!-- Contact Details -->
+        <div class="text-center mb-4">
+          <h2>Contact Us</h2>
+          <p><strong>Email:</strong> info@livingtourlife.com</p>
+          <p><strong>Phone:</strong> +1 (800) 123-4567</p>
+          <p><strong>Address:</strong> 123 Adventure Road, Wander City</p>
+        </div>
+    
+        <!-- Contact Form -->
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-sm-12">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Full Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="123-456-7890">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+              </div>
+              <div class="text-center pb-3">
+                <button type="submit" class="btn btn-primary px-4">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <section footer>
+    <footer class="bg-dark text-white py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4">
+            <h5 class="text-uppercase">Follow Us</h5>
+            <div>
+              <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+           <div class="col-lg-4 col-md-6">
+            <h5 class="text-uppercase">Contact Us</h5>
+            <p class="mb-1">123 Adventure Road, Wander City</p>
+            <p class="mb-1">Phone: +1 (800) 123-4567</p>
+            <p>Email: info@livingtourlife.com</p>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p class="mb-0">&copy; 2024 Wanderlust Adventures. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+    <!-- Add Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
